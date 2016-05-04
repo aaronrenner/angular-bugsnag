@@ -109,6 +109,7 @@ describe('angular-bugsnag', function () {
         expect(actual.params.name).toBe('TypeError');
         expect(actual.params.message).toBe('\'undefined\' is not an object (evaluating \'this.foo.bar\')');
         expect(actual.params.context).toBe('/aaa/bbb');
+        expect(actual.params.severity).toBe('error');
 
     }));
 

@@ -98,7 +98,7 @@
                                 if (angular.isString(exception)) {
                                     bugsnag.notify(exception);
                                 } else {
-                                    bugsnag.notifyException(exception);
+                                    bugsnag.notifyException(exception, undefined, undefined, 'error');
                                 }
                             } catch (e) {
                                 $log.error(e);
